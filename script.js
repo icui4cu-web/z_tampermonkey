@@ -69,8 +69,9 @@
 
 		if (isLastPage() || (MAX_PAGES > 0 && pagesCollected >= MAX_PAGES)) {
 			log(`Сбор завершен. Всего собрано ${allIds.length} ID с ${pagesCollected} страниц`);
+			console.log(allIds);
 			isCollecting = false;
-			startViewing();
+			// startViewing();
 			return;
 		}
 
